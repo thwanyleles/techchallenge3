@@ -35,7 +35,7 @@ const PostList = () => {
     };
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto">
             <h2 className="text-2xl font-bold mb-4" style={{ color: '#8A8A8A' }}>Últimos Posts:</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {posts.map((post) => (
