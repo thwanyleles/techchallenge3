@@ -15,6 +15,7 @@ interface Post {
 
 const PostList = () => {
     const [posts, setPosts] = useState<Post[]>([]);
+    const [searchTerm, setSearchTerm] = useState<string>('');
     const router = useRouter();
 
     useEffect(() => {
@@ -34,11 +35,24 @@ const PostList = () => {
         router.push(`/post/${id}`);
     };
 
+    const filteredPosts = posts.filter(post =>
+        post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        post.content.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
     return (
         <div className="container mx-auto">
             <h2 className="text-2xl font-bold mb-4" style={{ color: '#8A8A8A' }}>Últimos Posts:</h2>
+            <input
+                type="text"
+                placeholder="Buscar posts..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="mb-4 p-2 border rounded"
+                style={{ color: '#8A8A8A' }}
+            />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {posts.map((post) => (
+                {filteredPosts.map((post) => (
                     <div key={post.id} className="p-4 border rounded shadow-md bg-white flex flex-col">
                         <h3 className="text-xl font-bold text-center" style={{ color: '#8A8A8A' }}>{post.title}</h3>
                         <hr className="my-2 border-gray-300" />
