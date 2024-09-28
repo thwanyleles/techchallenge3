@@ -1,13 +1,20 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import LoginForm from "@/components/LoginForm";
 
 const LoginPage: React.FC = () => {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-black px-4">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-[#201F1F] px-4">
+            <Image
+                src="/bloguinho-logo.svg"
+                alt="Bloguinho Logo"
+                className="h-20 mb-4"
+                width={500}
+                height={500}
+            />
             <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-                <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">Login</h1>
                 <LoginForm />
             </div>
         </div>

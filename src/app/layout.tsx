@@ -9,7 +9,7 @@ import '../styles/globals.css';
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
         <html lang="en">
-        <body className="bg-gray-900 text-white">
+        <body className="text-white">
         <AuthProvider>
             <div className="min-h-screen flex flex-col">
                 <Header />

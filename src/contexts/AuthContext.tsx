@@ -4,7 +4,7 @@ import { User } from '@/types/User';
 
 interface AuthContextType {
     user: User | null;
-    login: (username: string, password: string) => Promise<void>;
+    login: (email: string, password: string) => Promise<void>;
     logout: () => void;
 }
 
@@ -26,10 +26,10 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         }
     }, []);
 
-    const login = async (username: string, password: string) => {
+    const login = async (email: string, password: string) => {
         try {
-            console.log('Tentando logar com:', username);
-            const response = await api.post('/auth/login', { username, password });
+            console.log('Tentando logar com:', email);
+            const response = await api.post('/auth/login', { email, password });
             console.log('Resposta da API:', response.data);
             const { token, user } = response.data;
             if (!user) {
