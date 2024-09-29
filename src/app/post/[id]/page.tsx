@@ -103,6 +103,7 @@ const PostPage: React.FC = () => {
                             created_at={comment.created_at}
                             onDelete={handleCommentDelete}
                             isLoggedIn={!!user}
+                            post_id={comment.post_id}
                         />
                     ))}
                 </div>
