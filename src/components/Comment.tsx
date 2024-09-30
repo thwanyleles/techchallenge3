@@ -19,6 +19,7 @@ const Comment: React.FC<CommentProps> = ({ id, author, content, created_at, onDe
                 <button
                     onClick={() => onDelete(id)}
                     className="text-red-500 hover:text-red-700 ml-2"
+                    title="Delete comment"
                 >
                     <FaTrash size={20} />
                 </button>
