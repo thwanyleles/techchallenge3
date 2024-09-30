@@ -203,6 +203,6 @@ O projeto "Bloguinho" é uma aplicação funcional que atende aos requisitos de 
 
 Sinta-se à vontade para contribuir com melhorias ou relatar problemas no repositório.
 
-## Licença
+## 10. Licença
 
 Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
