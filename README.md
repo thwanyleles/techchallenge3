@@ -12,7 +12,7 @@ O projeto "Bloguinho" é uma aplicação web desenvolvida com Next.js que permit
 - Thwany Leles
 
 ## 3. Prototipagem
-O protótipo da aplicação foi desenvolvido e está disponível no Figma: [Protótipo do Bloguinho](#).
+O protótipo da aplicação foi desenvolvido e está disponível no Figma: [Protótipo do Bloguinho](https://www.figma.com/design/bPldSjHtmWBWHiogO8m51g/Desafio-%233?node-id=5-2&node-type=canvas&t=V2F63xc6l1fOxtgT-0).
 
 ## 4. Setup Inicial
 
@@ -39,7 +39,7 @@ ou
 yarn install
 ```
 
-**Backend:** Para que a aplicação funcione corretamente, você precisará rodar o backend. O backend está disponível neste repositório. Certifique-se de que o backend esteja rodando (normalmente na porta 3000) antes de iniciar o frontend.
+**Backend:** Para que a aplicação funcione corretamente, você precisará rodar o backend. O backend está disponível neste [repositório](https://github.com/FullStack24/techchallenge2). Certifique-se de que o backend esteja rodando (normalmente na porta 3000) antes de iniciar o frontend.
 
 Inicie o servidor de desenvolvimento:
 
